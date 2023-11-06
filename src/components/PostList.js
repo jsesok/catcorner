@@ -63,6 +63,7 @@ function PostList() {
           console.error("Error fetching data:", error);
         });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch, subredditName]);
 
   const displayedPosts = searchTerm ? filteredPostings : posts;
